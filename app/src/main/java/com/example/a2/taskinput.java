@@ -51,9 +51,9 @@ public class taskinput extends Fragment {
         btnSave.setOnClickListener(view -> {
             String title = etTitle.getText().toString();
             String description = etDescription.getText().toString();
-
+            if(!title.isEmpty()){
             // Notify the listener (MainActivity) with the task data
-            listener.onTaskAdded(title, description);
+            listener.onTaskAdded(title, description);}
 
             // Optionally pop the fragment from the back stack
             getFragmentManager().popBackStack();
