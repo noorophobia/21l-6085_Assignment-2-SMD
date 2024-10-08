@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="text_margintop">32dp</dimen>
+    <dimen name="et_margintop">20dp</dimen>
+    <dimen name="titleSize">24sp</dimen>
+    <dimen name="descriptionSize">20sp</dimen>
+    <dimen name="etMarginHorizontal">16dp</dimen>
+    <dimen name="etSize">24sp</dimen>
+    <dimen name="zerodp">0dp</dimen>
+    <dimen name="btnwidth">150dp</dimen>
+    <dimen name="btnMarginTop">20dp</dimen>
+    <dimen name="imageWidth">200dp</dimen>
+    <dimen name="imageHeight">200dp</dimen>
+    <dimen name="fabMargin">16dp</dimen>
+    <dimen name="marginStart">339dp</dimen>
+    <dimen name="marginTop">611dp</dimen>
+    <dimen name="linearLayoutpadding">16dp</dimen>
+    <dimen name="completeTaskSize">28sp</dimen>
+    <dimen name="dividerHeigth">10dp</dimen>
+    <dimen name="btnTextSize">20sp</dimen>
+    <dimen name="btnPadding">12dp</dimen>
+
+    <item name="btnHrizontalBias" type="dimen" format="float">1.0</item>
+    <item name="listviewHorizontalBias" type="dimen" format="float">0.0</item>
+    <item name="fabBias" type="dimen" format="float">0.9</item>
+</resources>

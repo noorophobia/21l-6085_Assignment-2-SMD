@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pink"
+    android:padding="@dimen/linearLayoutpadding">
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="@string/CompletedTask"
+    android:textColor="@color/black"
+android:textSize="@dimen/completeTaskSize"
+    android:id="@+id/tvCompletedTask"
+android:layout_marginBottom="@dimen/text_margin" />
+
+
+
+    <ListView
+android:id="@+id/dialogcompleted_tasks_list_view"
+android:layout_width="match_parent"
+android:layout_height="@dimen/zerodp"
+    android:layout_weight="1"
+    android:dividerHeight="@dimen/dividerHeigth"
+    android:divider="@android:color/transparent" />
+
+<Button
+android:id="@+id/btnCloseDialog"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="@string/close"
+android:textSize="@dimen/btnTextSize"
+android:padding="@dimen/btnPadding"
+android:layout_marginTop="@dimen/text_margin" />
+    </LinearLayout>

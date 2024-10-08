@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag_taskinput"
+        tools:context=".taskinput"
+        android:background="@color/pink">
+
+        <TextView
+            android:id="@+id/tvAddTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/add_new_task"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="@dimen/zerodp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/enter_title"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/etSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAddTask" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="@dimen/zerodp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/etMarginHorizontal"
+            android:layout_marginTop="@dimen/et_margintop"
+            android:hint="@string/enter_description"
+            android:inputType="textMultiLine"
+            android:textColor="@color/black"
+            android:textSize="@dimen/etSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etTitle" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="@dimen/btnwidth"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etDescription"
+            android:layout_marginTop="@dimen/btnMarginTop" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
