@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class taskinput extends Fragment {
     EditText etTitle, etDescription;
@@ -52,11 +53,17 @@ public class taskinput extends Fragment {
             String title = etTitle.getText().toString();
             String description = etDescription.getText().toString();
             if(!title.isEmpty()){
-            // Notify the listener (MainActivity) with the task data
-            listener.onTaskAdded(title, description);}
+             // Notify the listener (MainActivity) with the task data
+            listener.onTaskAdded(title, description);
+
 
             // Optionally pop the fragment from the back stack
-            getFragmentManager().popBackStack();
+            getFragmentManager().popBackStack();}
+            else{
+                Toast.makeText(v.getContext(), "Title is  required", Toast.LENGTH_SHORT).show();
+
+            }
+
         });
 
         return v;

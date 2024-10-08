@@ -77,7 +77,11 @@ public class MainActivity extends AppCompatActivity implements TaskAdapter.OnTas
 
     @Override
     public void onTaskAdded(String title, String description) {
+        if(description.isEmpty()){
+            description="no description";
+        }
         Task newTask = new Task(title, description);
+
         tasks.add(newTask);
         taskAdapter.notifyDataSetChanged(); // Notify the adapter of data change
     }
